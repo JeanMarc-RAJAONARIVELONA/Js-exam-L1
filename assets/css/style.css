@@ -87,10 +87,6 @@ header {
   border-radius: 2vw;
   position: relative;
   margin-top: 1.5vh;
-  /* background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url(../photo/bannière.jpg);
-  background-position: center;
-  background-size: cover; */
   background-color: var(--background);
   display: flex;
   flex-direction: row;
@@ -104,6 +100,7 @@ header {
   justify-content: center;
   gap: 5vh;
   padding: 2vh 2vw;
+  border-radius: 2vw 0 0 2vw;
 }
 .header-left h3 {
   font-size: 2rem;
@@ -175,4 +172,89 @@ header {
   right: 7vw !important;
   top: 25vh !important;
   z-index: 2;
+}
+.about {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 76vh;
+  width: 98%;
+  margin: 0 auto;
+  padding-inline: 4vw;
+}
+.card-img {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1vw;
+  flex-direction: row;
+  justify-content: center;
+  width: 50%;
+  height: 100%;
+  padding: 4vh 2vw;
+}
+.about-image1 {
+  width: 15vw;
+  height: 15vw;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+.about-image {
+  width: 17vw;
+  height: 17vw;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+.text-content {
+  width: 50%;
+  height: 100%;
+  justify-content: center;
+  gap: 4vh;
+  padding: 5px;
+}
+.text-content h3 {
+  font-size: 2rem;
+}
+.text-content p {
+  font-size: 1.1rem;
+}
+.btn-reservation {
+  width: fit-content;
+  height: fit-content;
+  padding: 2vh 3vw;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background: var(--primary-color);
+  color: var(--white);
+  font-weight: 600;
+}
+
+.flex-raw {
+  display: flex;
+  flex-direction: row;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+.about-statistic {
+  width: 100%;
+}
+.first-stat span,
+.second-stat span,
+.third-stat span {
+  font-size: 2rem;
+  z-index: 1;
+  color: var(--black);
+  text-align: center;
+  font-weight: 600;
+}
+.first-stat p,
+.second-stat p,
+.third-stat p {
+  font-size: 0.9rem;
+  width: fit-content;
+  text-align: center;
 }
