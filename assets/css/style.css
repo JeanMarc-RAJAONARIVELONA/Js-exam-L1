@@ -437,3 +437,100 @@ header {
   height: 100%;
   object-fit: cover;
 }
+/* footer section */
+footer {
+  width: 100%;
+  height: 40vh;
+  background-color: var(--black);
+  color: var(--white);
+  padding: 3vh 3vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+}
+
+.footer-left {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  gap: 4vh;
+}
+
+.footer-logo {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.footer-logo img {
+  width: 10vh;
+  height: 10vh;
+}
+
+.footer-logo p,
+.footer-logo span {
+  font-size: 1.3rem;
+}
+
+.social-network {
+  height: 5vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1vw;
+}
+
+.social-icon {
+  font-size: 2rem;
+}
+
+.social-icon:hover {
+  color: var(--secondary-color);
+  scale: 1.1;
+}
+
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  gap: 5vh;
+}
+
+.footer-form-content {
+  background-color: var(--terty-color);
+  width: 25vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 6vh;
+}
+
+.footer-form-content input {
+  outline: none;
+  border: none;
+  width: 100%;
+  height: 100%;
+  padding-inline: 1vw;
+}
+
+.footer-form-content button {
+  height: 100%;
+  padding: 1vh 2vw;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background-color: var(--secondary-color);
+  font-weight: 800;
+}
+
+.copyright {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #181818;
+  text-align: center;
+  font-size: 0.8rem;
+  padding: 4px;
+}
