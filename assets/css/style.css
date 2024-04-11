@@ -300,19 +300,18 @@ header {
   padding: 1rem;
   display: flex;
   flex-direction: column;
-  gap: 3vh;
+  gap: 2vh;
+  padding: 2vh 2vw;
 }
 
 .destination h3 {
   font-size: 2rem;
-  width: 100%;
-  text-align: center;
+  margin-left: 3vw;
 }
 
 .destination-slogan {
   font-size: 1.2rem;
-  text-align: center;
-  width: 100%;
+  margin-left: 3vw;
 }
 
 .destination-content {
@@ -323,7 +322,6 @@ header {
 }
 
 .destination-card {
-  text-align: center;
   width: 20vw;
   height: fit-content;
   border-radius: 16px;
@@ -337,55 +335,63 @@ header {
   object-fit: cover;
   padding: 8px;
 }
-
-.destination-card-text {
-  font-size: 0.8em;
+.destination-card-body {
+  padding-inline: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+  padding-bottom: 8px;
 }
-
-.card-description {
-  width: 100%;
-}
-
-.button-destination-content {
+.card-body-header {
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: space-between;
-  margin-block: 1vh;
-  padding-inline: 8px;
-  margin-block: 2vh;
+  align-items: center;
 }
-
-.button-destination-content button:first-child {
-  background-color: var(--primary-color);
-  border: none;
-  outline: none;
-  padding: 8px;
+.placeTime {
+  display: flex;
+  flex-direction: column;
+}
+.placeTime h4 {
+  font-size: 1.2rem;
+}
+.placeTime p {
   font-size: 0.9rem;
-  border-radius: 4px;
-  cursor: pointer;
-  color: var(--white);
-  font-weight: 800;
 }
-
-.button-destination-content button:last-child {
-  border: 1px solid var(--primary-color);
-  outline: none;
-  padding: 8px;
-  font-size: 0.9rem;
-  font-weight: 800;
-  border-radius: 4px;
-  cursor: pointer;
+.star-content {
+  display: inherit;
+  flex-direction: inherit;
+  align-items: center;
+  gap: 4px;
+  color: var(--secondary-color);
 }
-
+.card-service {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.card-service-first,
+.card-service-second,
+.card-service-third,
+.card-service-fourth {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .card-footer {
   display: flex;
-  width: 100%;
-  height: 5vh;
   flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 1vw;
   margin-top: 1vh;
-  background-color: var(--primary-color);
-  border-radius: 0 0 16px 16px;
+  background-color: #6faedb5b;
+  padding: 1vh 1vw;
+  font-weight: 600;
+  border-radius: 8px;
+}
+.card-footer .fa-bookmark {
+  font-size: 1.3rem;
+  color: var(--secondary-color);
 }
