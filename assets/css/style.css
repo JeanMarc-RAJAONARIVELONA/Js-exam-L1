@@ -395,3 +395,45 @@ header {
   font-size: 1.3rem;
   color: var(--secondary-color);
 }
+/* hotel section */
+.hotel {
+  padding: 2vh 2vw;
+}
+.hotel h3 {
+  font-size: 2rem;
+  margin-left: 3vw;
+}
+
+.hotel p {
+  font-size: 1.2rem;
+  margin-left: 3vw;
+}
+
+.hotel-content {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  padding: 2vh 2vw;
+  gap: 2vw;
+  justify-content: center;
+}
+.left-content,
+.right-content {
+  flex-basis: 30%;
+  height: 100%;
+}
+.left-content img,
+.right-content img {
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+}
+.hotel-middle {
+  flex-basis: 25%;
+  height: 100%;
+}
+.hotel-middle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
