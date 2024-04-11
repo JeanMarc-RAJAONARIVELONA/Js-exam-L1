@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: "Quicksand", sans-serif;
+  font-size: 16px;
+}
+
+:root {
+  --primary-color: #0d7cc6;
+  --secondary-color: #f68712;
+  --terty-color: #90c2e6;
+  --black: #010101;
+  --white: #f2f2f2;
+  --background: aliceblue;
+}
+
+span {
+  color: var(--secondary-color) !important;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+}
+.login-left {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3vh;
+}
+.login-left h3 {
+  font-size: 2.5rem;
+}
+
+.login-left > p {
+  width: 65%;
+  text-align: center;
+}
+.form-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 55%;
+  gap: 4vh;
+  padding: 1vh 0;
+}
+.input-name,
+.input-password {
+  width: 100%;
+  height: 6vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(236, 236, 236);
+  padding: 4px;
+  border-radius: 4px;
+}
+.input-name input,
+.input-password input {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border: none;
+  padding-inline: 1vw;
+  background: transparent;
+}
+.input-icon {
+  font-size: 1.6rem;
+}
+.login-button {
+  padding: 1vh 3vw;
+  background-color: var(--primary-color);
+  outline: none;
+  border: none;
+  color: var(--white);
+  font-weight: 700;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.error-content {
+  background-color: #ed4337;
+  padding: 1vh 2vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1vw;
+  color: var(--white);
+}
+.login-right {
+  background-color: var(--primary-color);
+  width: 50%;
+  height: 100vh;
+  background-image: url(../photo/loginBackgroud.png);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.travel-middle-img {
+  width: 40vw;
+  height: 40vw;
+  object-fit: cover;
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 20vw);
+}
+.plane-image {
+  width: 20vw;
+  height: 20vw;
+  object-fit: contain;
+  position: absolute;
+  left: calc(50% - 8vw);
+  top: 2vh;
+}
