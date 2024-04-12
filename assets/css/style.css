@@ -288,11 +288,12 @@ header {
   border: none;
   outline: none;
   background: var(--primary-color);
-  color: var(--white);
   font-weight: 600;
   cursor: pointer;
 }
-
+.btn-reservation a {
+  color: var(--white);
+}
 .flex-raw {
   display: flex;
   flex-direction: row;
@@ -517,6 +518,23 @@ header {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+.reservation-succes {
+  position: fixed;
+  right: 2vw;
+  bottom: 3vh;
+  background-color: #53a653;
+  padding: 2vh 2vw;
+  color: var(--white);
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: 800;
+  border-radius: 1rem;
+}
+.reservation-hidden {
+  display: none;
 }
 /* hotel section */
 .hotel {

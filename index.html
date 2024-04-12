@@ -111,7 +111,9 @@
           every month. From tropical paradises to historic landmarks, our
           curated selections are sure to inspire your next adventure.
         </p>
-        <button class="btn-reservation">Reservation</button>
+        <button class="btn-reservation">
+          <a href="#reservation"> Reservation </a>
+        </button>
         <div class="about-statistic flex-raw">
           <div class="first-stat flex-column">
             <span>99.9 %</span>
@@ -293,7 +295,7 @@
           harum natus ex, sit numquam eligendi illum cupiditate?
         </p>
         <h5>Here our Reservation</h5>
-        <form action="" class="reservation-form">
+        <form class="reservation-form" onsubmit="{reservation()}">
           <div class="location">
             <label for="location"> Location </label>
             <div class="location-body">
@@ -303,6 +305,7 @@
                 name="location"
                 id="locationform "
                 placeholder="where are you going"
+                required
               />
             </div>
           </div>
@@ -310,28 +313,39 @@
             <label for="location"> Check in </label>
             <div class="location-body">
               <i class="fa-solid fa-calendar-check reservation-icon"></i>
-              <input type="date" name="check in" id="checkin " />
+              <input type="date" name="check in" id="checkin " required />
             </div>
           </div>
           <div class="location">
             <label for="location"> Check out </label>
             <div class="location-body">
               <i class="fa-solid fa-calendar-check reservation-icon"></i>
-              <input type="date" name="Check out" id="checkout" />
+              <input type="date" name="Check out" id="checkout" required />
             </div>
           </div>
           <div class="location">
             <label for="location"> E-mail</label>
             <div class="location-body">
               <i class="fa-solid fa-calendar-check reservation-icon"></i>
-              <input type="email" name="email " id="reservation-email" />
+              <input
+                type="email"
+                name="email "
+                id="reservation-email"
+                required
+              />
             </div>
           </div>
-          <button class="reservation-button">make reservation</button>
+          <button class="reservation-button" type="submit">
+            make reservation
+          </button>
         </form>
       </div>
       <div class="reservation-right">
         <img src="assets/photo/reservation.jpg" alt="image" />
+      </div>
+      <div class="reservation-hidden" id="successReservation">
+        <i class="fa-solid fa-square-check"></i>
+        <p>Reservation success</p>
       </div>
     </section>
     <section class="hotel" id="hotel">

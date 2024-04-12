@@ -1,6 +1,6 @@
 const navbar = document.querySelector("nav");
-
-console.log(navbar);
+const reservationBtn = document.querySelector(".reservation-button");
+const successreservation = document.querySelector("#successReservation");
 //redirect into login page
 const signout = document.querySelector(".sign-out");
 signout.addEventListener("click", () => {
@@ -15,3 +15,12 @@ window.addEventListener("scroll", () => {
     navbar.classList.remove("nav-scrolled");
   }
 });
+//show reservation message success
+function reservation() {
+  successreservation.classList.remove("reservation-hidden");
+  successreservation.classList.add("reservation-succes");
+  setTimeout(() => {
+    successreservation.classList.add("reservation-hidden");
+    successreservation.classList.remove("reservation-succes");
+  }, 1500);
+}
