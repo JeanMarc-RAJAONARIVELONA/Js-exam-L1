@@ -93,6 +93,10 @@ span {
   align-items: center;
   gap: 1vw;
   color: var(--white);
+  transition: 1s ease-in;
+}
+.error-hidden {
+  display: none;
 }
 .login-right {
   background-color: var(--primary-color);
@@ -110,7 +114,9 @@ span {
   position: absolute;
   bottom: 0;
   left: calc(50% - 20vw);
+  animation: animate 2s linear infinite alternate-reverse;
 }
+
 .plane-image {
   width: 20vw;
   height: 20vw;
@@ -118,4 +124,24 @@ span {
   position: absolute;
   left: calc(50% - 8vw);
   top: 2vh;
+  animation: plane 4s linear infinite;
+}
+@keyframes animate {
+  0% {
+    transform: translateZ(0);
+  }
+  50% {
+    transform: translateY(-2vh);
+  }
+}
+@keyframes plane {
+  0% {
+    scale: 0.1;
+  }
+  50% {
+    scale: 0.5;
+  }
+  100% {
+    scale: 1;
+  }
 }

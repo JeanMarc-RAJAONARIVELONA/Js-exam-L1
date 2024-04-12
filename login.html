@@ -31,7 +31,7 @@
           personalized itineraries, and exclusive deals. Let's explore the world
           together!
         </p>
-        <form class="form-content" onsubmit="{authentificationcheck()}">
+        <form class="form-content">
           <div class="input-name">
             <i class="fa-solid fa-circle-user input-icon"></i>
             <input
@@ -53,7 +53,7 @@
             />
           </div>
           <button type="submit" class="login-button">Login Now</button>
-          <div class="error-content">
+          <div class="error-hidden" id="error">
             <i class="fa-solid fa-triangle-exclamation"></i>
             email or password invalid
           </div>
