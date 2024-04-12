@@ -37,8 +37,18 @@ nav {
   left: calc(50% - 47.7%);
   border-radius: 10px;
   z-index: 1;
+  transition: 1s ease-in;
 }
-
+.nav-scrolled {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #c2e4fc;
+  border-radius: 0;
+  z-index: 10;
+  transition: 1s ease-in;
+}
 .logo {
   display: flex;
   flex-direction: row;
