@@ -186,6 +186,10 @@ header {
   background-color: var(--secondary-color);
   border-radius: 50%;
   border: 1px solid var(--black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .fleche-courbe {
@@ -196,7 +200,20 @@ header {
   top: 25vh !important;
   z-index: 2;
 }
-
+.travel-gallery {
+  width: 10vw;
+  height: 13vh;
+  position: absolute;
+  left: 10vw;
+  bottom: 6vh;
+  padding: 4px;
+  border: 2px solid #f7f7f77c;
+}
+.travel-gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 /* About section */
 .about {
   display: flex;
@@ -395,6 +412,95 @@ header {
   font-size: 1.3rem;
   color: var(--secondary-color);
 }
+/* reservation section */
+.reservation {
+  height: 70vh;
+  width: 80%;
+  margin: 0 auto;
+  background-color: var(--terty-color);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+}
+.reservation-left {
+  width: 50%;
+  height: 100%;
+  padding: 1vw;
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+.reservation-left h3 {
+  font-size: 2.5rem;
+}
+.reservation-left h5 {
+  font-size: 1.4rem;
+}
+.reservation-form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2vw;
+}
+.location {
+  padding: 4px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+  width: 45%;
+}
+.location label {
+  font-weight: 700;
+  font-size: 1.05rem;
+}
+.location-body {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5vw;
+  border: 1px solid #b8b6b6;
+  padding: 8px;
+  border-radius: 4px;
+  background-color: var(--white);
+}
+.location-body input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+.location-body .reservation-icon {
+  font-size: 1.3rem;
+}
+.reservation-button {
+  width: 80%;
+  margin: 0 auto;
+  padding-block: 1vh;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  background-color: var(--secondary-color);
+  color: var(--white);
+  border-radius: 4px;
+}
+.reservation-right {
+  width: 50%;
+  height: 100%;
+  padding: 1vw;
+}
+.reservation-right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+.reservation-right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 /* hotel section */
 .hotel {
   padding: 2vh 2vw;
@@ -427,6 +533,7 @@ header {
   width: 100%;
   height: 50%;
   object-fit: cover;
+  border-radius: 0.5rem;
 }
 .hotel-middle {
   flex-basis: 25%;
@@ -436,6 +543,7 @@ header {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-radius: 0.5rem;
 }
 /* footer section */
 footer {
