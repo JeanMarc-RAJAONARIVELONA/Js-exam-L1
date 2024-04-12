@@ -85,6 +85,7 @@ ul li a {
   background-color: var(--primary-color);
   color: var(--white);
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .sign-out:hover {
@@ -133,6 +134,7 @@ header {
   color: var(--white);
   border-radius: 5px;
   margin-top: 3vh;
+  cursor: pointer;
 }
 
 .btn-primary:hover {
@@ -278,6 +280,7 @@ header {
   background: var(--primary-color);
   color: var(--white);
   font-weight: 600;
+  cursor: pointer;
 }
 
 .flex-raw {
@@ -319,16 +322,19 @@ header {
   flex-direction: column;
   gap: 2vh;
   padding: 2vh 2vw;
+  margin-block: 3vh;
 }
 
 .destination h3 {
   font-size: 2rem;
   margin-left: 3vw;
+  text-align: center;
 }
 
 .destination-slogan {
   font-size: 1.2rem;
   margin-left: 3vw;
+  text-align: center;
 }
 
 .destination-content {
@@ -336,6 +342,7 @@ header {
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
+  margin-block: 3vh;
 }
 
 .destination-card {
@@ -416,7 +423,7 @@ header {
 .reservation {
   height: 70vh;
   width: 80%;
-  margin: 0 auto;
+  margin: 4vh auto;
   background-color: var(--terty-color);
   display: flex;
   flex-direction: row;
@@ -508,11 +515,13 @@ header {
 .hotel h3 {
   font-size: 2rem;
   margin-left: 3vw;
+  text-align: center;
 }
 
 .hotel p {
   font-size: 1.2rem;
   margin-left: 3vw;
+  text-align: center;
 }
 
 .hotel-content {
@@ -522,6 +531,7 @@ header {
   padding: 2vh 2vw;
   gap: 2vw;
   justify-content: center;
+  margin-block: 3vh;
 }
 .left-content,
 .right-content {
