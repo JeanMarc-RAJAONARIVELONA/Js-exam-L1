@@ -549,6 +549,11 @@ header {
 footer {
   width: 100%;
   height: 40vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.footer-content {
   background-color: var(--black);
   color: var(--white);
   padding: 3vh 3vw;
@@ -556,14 +561,13 @@ footer {
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  position: relative;
 }
-
 .footer-left {
   width: 25%;
   display: flex;
   flex-direction: column;
   gap: 4vh;
+  height: 100%;
 }
 
 .footer-logo {
@@ -599,11 +603,22 @@ footer {
   color: var(--secondary-color);
   scale: 1.1;
 }
-
+.footer-middle {
+  height: 100%;
+  margin-top: 2vh;
+}
+.footer-middle h4 {
+  font-size: 1.5rem;
+}
 .footer-right {
   display: flex;
   flex-direction: column;
   gap: 5vh;
+  height: 100%;
+  margin-top: 2vh;
+}
+.footer-right h4 {
+  font-size: 1.5rem;
 }
 
 .footer-form-content {
@@ -634,11 +649,10 @@ footer {
 }
 
 .copyright {
-  position: absolute;
-  bottom: 0;
   width: 100%;
   background-color: #181818;
   text-align: center;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   padding: 4px;
+  color: var(--white);
 }
