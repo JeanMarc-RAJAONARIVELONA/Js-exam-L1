@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="reponsive.css" />
+    <link rel="stylesheet" href="assets/css/reponsive.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -37,8 +37,16 @@
         <li><a href="#destination">Destination</a></li>
         <li><a href="#hotel">Hotel</a></li>
         <li><a href="#reservation">Reservation </a></li>
+        <div id="fa-circle-xmark">
+          <i class="fa-solid fa-circle-xmark"></i>
+        </div>
       </ul>
-      <button class="sign-out">Sign out</button>
+      <div class="mobile-menu">
+        <div id="menu">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <button class="sign-out">Sign out</button>
+      </div>
     </nav>
     <header>
       <div class="header-left">
@@ -295,7 +303,7 @@
           harum natus ex, sit numquam eligendi illum cupiditate?
         </p>
         <h5>Here our Reservation</h5>
-        <form class="reservation-form" onsubmit="{reservation()}">
+        <form class="reservation-form" onsubmit="{reservation(event)}">
           <div class="location">
             <label for="location"> Location </label>
             <div class="location-body">
@@ -326,7 +334,7 @@
           <div class="location">
             <label for="location"> E-mail</label>
             <div class="location-body">
-              <i class="fa-solid fa-calendar-check reservation-icon"></i>
+              <i class="fa-solid fa-envelope reservation-icon"></i>
               <input
                 type="email"
                 name="email "

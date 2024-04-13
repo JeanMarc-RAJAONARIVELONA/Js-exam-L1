@@ -11,6 +11,16 @@ const aboutSection = document.querySelector("#about");
 const destinationsection = document.querySelector("#destination");
 const reservationSection = document.querySelector("#reservation");
 const hotelSection = document.querySelector("#hotel");
+const barsMenu = document.querySelector("#menu");
+const ulMenu = document.querySelector("ul");
+const close = document.querySelector("#fa-circle-xmark");
+//function to show ul"
+barsMenu.addEventListener("click", () => {
+  ulMenu.classList.add("ulShow");
+});
+close.addEventListener("click", () => {
+  ulMenu.classList.remove("ulShow");
+});
 //function to reset form value
 const resetValue = (input) => {
   input.value = "";
@@ -73,13 +83,14 @@ sections.forEach((section) => {
 });
 
 //show reservation message success
-const reservation = () => {
+const reservation = (event) => {
+  event.preventDefault();
   successreservation.classList.remove("hidden");
   successreservation.classList.add("reservation-succes");
   setTimeout(() => {
     successreservation.classList.add("hidden");
     successreservation.classList.remove("reservation-succes");
-  }, 1500);
+  }, 2000);
 };
 
 //show notification when email for newqp

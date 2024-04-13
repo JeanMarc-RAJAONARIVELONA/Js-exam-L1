@@ -1,74 +1,516 @@
-@media screen and (max-width: 412px) {
-  nav {
-    width: 100%;
-    position: absolute;
-    top: 0;
+@media screen and (max-width: 1920px) and (min-width: 1367px) {
+  * {
+    font-size: 18px;
   }
-  nav ul {
-    display: none;
+
+  .header-right-middle {
+    width: 35vw;
+  }
+  .star-voyage {
+    top: 6vh;
+  }
+  .fleche-courbe {
+    top: 23vh !important;
+  }
+  .about-image1 {
+    width: 17vw;
+    height: 17vw;
+  }
+  .about-image {
+    width: 19vw;
+    height: 19vw;
+  }
+}
+@media screen and (max-width: 1200px) and (min-width: 962px) {
+  .header-right-middle {
+    width: 40vw;
+  }
+  .star-voyage {
+    top: 7vh;
+  }
+  .fleche-courbe {
+    top: 20vh !important;
+  }
+  .about-image1 {
+    width: 18vw;
+    height: 18vw;
+  }
+  .about-image {
+    width: 20vw;
+    height: 20vw;
+  }
+  .destination-content {
+    flex-direction: column;
+    gap: 2vh;
+  }
+  .destination-card {
+    width: 50vw;
+    height: 70vh;
+    padding: 1vh 1vw;
+  }
+  .destination-card img {
+    height: 60%;
+    padding: 8px;
+  }
+  .destination-card-body {
+    height: 40%;
+    justify-content: space-evenly;
+  }
+}
+@media screen and (max-width: 960px) and (min-width: 600px) {
+  #bars-menu {
+    font-size: 1.3rem;
   }
   header {
     flex-direction: column-reverse;
-    width: 100%;
     height: fit-content;
   }
   .header-left {
     width: 100%;
-    height: 100%;
+    height: 100vh;
+    align-items: center;
   }
-
+  .btn-primary {
+    width: 30vw;
+    height: 10vh;
+    font-size: 1.5rem;
+  }
   .header-right {
     width: 100%;
-    height: 100%;
+    height: 100vh;
   }
   .header-right-middle {
-    width: 100%;
+    height: 80%;
+    width: 80%;
   }
   .header-right-middle img {
-    width: 80%;
-    height: 80%;
+    height: 95%;
+    width: 95%;
+    top: 4vh;
+    left: 5vw;
+    object-fit: contain;
+  }
+  .star-voyage {
+    width: 11vw;
+    top: 10vh;
+  }
+  .fleche-courbe {
+    width: 20vw !important;
+    height: 20vw !important;
+    top: 20vh !important;
+  }
+  .travel-gallery {
+    width: 20vw;
+    height: 15vh;
+    left: 17vw;
   }
   .about {
     flex-direction: column;
-    justify-content: center;
-    width: 100%;
     height: fit-content;
   }
   .card-img {
-    gap: 2vh;
     flex-direction: column;
     width: 100%;
-    height: 100%;
   }
   .about-image,
   .about-image1 {
-    width: 100%;
-    height: 30vh;
+    width: 90%;
+    height: 50vh;
   }
   .text-content {
     width: 100%;
   }
   .destination-content {
     flex-direction: column;
-    justify-content: center;
     gap: 2vh;
   }
   .destination-card {
+    width: 90%;
+    height: 70vh;
+    padding: 1vh 1vw;
+  }
+  .destination-card img {
+    height: 60%;
+    padding: 8px;
+  }
+  .destination-card-body {
+    height: 40%;
+    justify-content: space-evenly;
+  }
+  .placeTime h4 {
+    font-size: 2rem;
+  }
+  .placeTime p {
+    font-size: 1rem;
+  }
+  .star-content .fa-star,
+  .star-content > p {
+    font-size: 1.5rem;
+  }
+  .card-service {
+    gap: 15vw;
+  }
+  .card-service-first p,
+  .card-service-second p,
+  .card-service-third p,
+  .card-service-fourth p {
+    font-size: 1.3rem;
+  }
+  .card-service-first .fa-plane,
+  .card-service-second .fa-hotel,
+  .card-service-third .fa-car,
+  .card-service-fourth .fa-umbrella-beach {
+    font-size: 1.5rem;
+  }
+  .card-footer {
+    padding: 3vh 2vw;
+  }
+  .card-footer .fa-bookmark {
+    font-size: 2rem;
+  }
+  .card-footer p {
+    font-size: 1.5rem;
+  }
+
+  .reservation {
+    width: 95%;
+    height: fit-content;
+    flex-direction: column-reverse;
+  }
+  .reservation-left {
     width: 100%;
+  }
+  .location-body {
+    height: 7vh;
+    align-items: center;
+    gap: 1vw;
+  }
+  .location-body .reservation-icon {
+    font-size: 1.5rem;
+  }
+  .reservation-button {
+    padding-block: 2vh;
+  }
+  .reservation-right {
+    width: 100%;
+    height: 60vh !important;
+  }
+  .reservation-right img {
+    width: 100%;
+    height: 100% !important;
+  }
+  .hotel {
+    height: fit-content !important;
+    display: block;
   }
   .hotel-content {
-    width: 100%;
     flex-direction: column;
-    height: 100%;
   }
-  footer {
-    width: 100%;
-    height: fit-content;
-    display: flex;
+  .left-content,
+  .right-content {
+    height: 100%;
+    flex-basis: 100% !important;
+  }
+  .left-content img,
+  .right-content img {
+    height: 60vh;
+    object-fit: cover;
+    border-radius: 0.5rem;
+  }
+  .hotel-middle {
+    height: 60vh;
+    align-items: center;
+  }
+  .footer-content {
     flex-direction: column;
-    position: relative;
+    width: 100%;
   }
   .footer-left {
     width: 100%;
+    align-items: center;
+  }
+  .social-network {
+    justify-content: center;
+    gap: 3vw;
+  }
+  .footer-middle {
+    width: 100%;
+    text-align: center;
+  }
+  .footer-right {
+    width: 100%;
+    text-align: center;
+  }
+  .footer-form-content {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .sent {
+    bottom: -10vh;
+  }
+}
+@media screen and (max-width: 599px) {
+  nav {
+    position: relative;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    height: 7vh;
+  }
+  ul {
+    background-color: var(--white);
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    top: 0vh;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    padding-top: 7vh;
+    transform: translateX(-100vw);
+    transition: all 1s ease-in-out;
+  }
+
+  ul li,
+  ul li a {
+    width: 90%;
+    padding: 2vh 2vw;
+    font-size: 1.2rem !important;
+  }
+  .mobile-menu {
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+    padding-inline: 1vw;
+  }
+  .fa-bars {
+    font-size: 1.3rem;
+    display: block;
+    z-index: 10;
+  }
+  .fa-circle-xmark {
+    position: absolute;
+    top: 1vh;
+    right: 3vw;
+    height: 30px;
+    width: 30px;
+    color: var(--secondary-color);
+    display: block;
+  }
+  header {
+    flex-direction: column-reverse;
+    overflow-x: hidden;
+    padding: 0 !important;
+  }
+  .header-left {
+    width: 100%;
+    height: 5 0vh;
+    align-items: center;
+  }
+  .header-left p {
+    width: 100%;
+    text-align: center;
+  }
+
+  .btn-primary {
+    width: 50vw;
+    height: 5vh;
+    font-size: 1.5rem;
+  }
+  .header-right {
+    width: 100%;
+    height: 50vh;
+  }
+  .header-right-middle {
+    height: 85%;
+    width: 90%;
+  }
+  .header-right-middle img {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 5vw;
+    object-fit: contain;
+  }
+  .star-voyage {
+    width: 20vw;
+    top: 2vh;
+    align-items: center;
+  }
+  .fleche-courbe {
+    width: 20vw !important;
+    height: 20vw !important;
+    top: 0vh !important;
+  }
+  .travel-gallery {
+    width: 30vw;
+    height: 10vh;
+    left: 4vw;
+  }
+  .about {
+    flex-direction: column;
+    height: fit-content;
+  }
+  .card-img {
+    flex-direction: column;
+    width: 100%;
+  }
+  .about-image,
+  .about-image1 {
+    width: 90%;
+    height: 50vh;
+  }
+  .text-content {
+    width: 100%;
+  }
+  .destination-content {
+    flex-direction: column;
+    gap: 2vh;
+  }
+  .destination-card {
+    width: 90%;
+    height: 70vh;
+    padding: 1vh 1vw;
+  }
+  .destination-card img {
+    height: 60%;
+    padding: 8px;
+  }
+  .destination-card-body {
+    height: 40%;
+    justify-content: space-evenly;
+  }
+  .placeTime h4 {
+    font-size: 2rem;
+  }
+  .placeTime p {
+    font-size: 1rem;
+  }
+  .star-content .fa-star,
+  .star-content > p {
+    font-size: 1.5rem;
+  }
+  .card-service {
+    gap: 6vw;
+  }
+  .card-service-first p,
+  .card-service-second p,
+  .card-service-third p,
+  .card-service-fourth p {
+    font-size: 1.3rem;
+  }
+  .card-service-first .fa-plane,
+  .card-service-second .fa-hotel,
+  .card-service-third .fa-car,
+  .card-service-fourth .fa-umbrella-beach {
+    font-size: 1.5rem;
+  }
+  .card-footer {
+    padding: 3vh 2vw;
+  }
+  .card-footer .fa-bookmark {
+    font-size: 2rem;
+  }
+  .card-footer p {
+    font-size: 1.5rem;
+  }
+
+  .reservation {
+    width: 95%;
+    height: fit-content;
+    flex-direction: column-reverse;
+  }
+  .reservation-left {
+    width: 100%;
+    padding-block: 4vh;
+  }
+  .reservation-form {
+    flex-direction: column;
+    width: 100%;
+  }
+  .location {
+    width: 100%;
+  }
+  .location-body {
+    height: 7vh;
+    align-items: center;
+    gap: 1vw;
+  }
+  .location-body .reservation-icon {
+    font-size: 1.5rem;
+  }
+  .reservation-button {
+    padding-block: 2vh;
+  }
+  .reservation-right {
+    width: 100%;
+    height: 60vh !important;
+  }
+  .reservation-right img {
+    width: 100%;
+    height: 100% !important;
+  }
+  .reservation-button {
+    margin-bottom: 3vh;
+  }
+  .reservation-succes {
+    bottom: 1vh;
+    font-size: 1rem;
+    padding: 1vh 2vw;
+    right: 23vw;
+  }
+  .hotel {
+    height: fit-content !important;
+    display: block;
+  }
+  .hotel-content {
+    flex-direction: column;
+  }
+  .left-content,
+  .right-content {
+    height: 100%;
+    flex-basis: 100% !important;
+  }
+  .left-content img,
+  .right-content img {
+    height: 60vh;
+    object-fit: cover;
+    border-radius: 0.5rem;
+  }
+  .hotel-middle {
+    height: 60vh;
+    align-items: center;
+  }
+  footer {
+    height: fit-content;
+  }
+  .footer-content {
+    flex-direction: column;
+    width: 100%;
+  }
+  .footer-left {
+    width: 100%;
+    align-items: center;
+  }
+  .social-network {
+    justify-content: center;
+    gap: 3vw;
+  }
+  .footer-middle {
+    width: 100%;
+    text-align: center;
+  }
+  .footer-right {
+    width: 100%;
+    text-align: center;
+  }
+  .footer-form-content {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .sent {
+    bottom: 14vh;
   }
 }
