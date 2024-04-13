@@ -9,7 +9,9 @@
   font-family: "Quicksand", sans-serif;
   font-size: 16px;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 :root {
   --primary-color: #0d7cc6;
   --secondary-color: #f68712;
@@ -317,7 +319,9 @@ header {
   text-align: center;
   font-weight: 600;
 }
-
+.first-stat span::after {
+  content: "%";
+}
 .first-stat p,
 .second-stat p,
 .third-stat p {
@@ -533,7 +537,7 @@ header {
   font-weight: 800;
   border-radius: 1rem;
 }
-.reservation-hidden {
+.hidden {
   display: none;
 }
 /* hotel section */
@@ -685,6 +689,21 @@ footer {
   background-color: var(--secondary-color);
   font-weight: 800;
 }
+.sent {
+  position: absolute;
+  background-color: #53a653;
+  right: 3vw;
+  bottom: 4vh;
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  border-radius: 50%;
+  color: var(--white);
+  font-weight: 700;
+}
 
 .copyright {
   width: 100%;
@@ -693,4 +712,17 @@ footer {
   font-size: 0.9rem;
   padding: 4px;
   color: var(--white);
+}
+.scroll-hidden {
+  opacity: 0 !important;
+  transform: scale(0.1) !important;
+  transition: all 1s ease-in-out !important;
+}
+#about,
+#destination,
+#reservation,
+#hotel {
+  opacity: 1;
+  transform: scale(1);
+  transition: all 1s ease-in-out;
 }

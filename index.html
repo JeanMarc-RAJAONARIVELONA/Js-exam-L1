@@ -81,7 +81,7 @@
         </div>
       </div>
     </header>
-    <section class="about" id="about">
+    <section class="about scroll-hidden" id="about">
       <div class="card-img">
         <img
           src="assets/photo/about1.jpg"
@@ -116,21 +116,21 @@
         </button>
         <div class="about-statistic flex-raw">
           <div class="first-stat flex-column">
-            <span>99.9 %</span>
+            <span class="increment" data-val="99">000</span>
             <p>of satisfied customers recommend our services</p>
           </div>
           <div class="second-stat flex-column">
-            <span>120</span>
+            <span class="increment" data-val="220">000</span>
             <p>countries visited annually</p>
           </div>
           <div class="third-stat flex-column">
-            <span>20</span>
+            <span class="increment" data-val="50">000</span>
             <p>years of experience in the travel industry</p>
           </div>
         </div>
       </div>
     </section>
-    <section class="destination" id="destination">
+    <section class="destination scroll-hidden" id="destination">
       <h3>Top Destination</h3>
       <p class="destination-slogan">Explore our best destination</p>
       <div class="destination-content">
@@ -284,7 +284,7 @@
         </div>
       </div>
     </section>
-    <section class="reservation" id="reservation">
+    <section class="reservation scroll-hidden" id="reservation">
       <div class="reservation-left">
         <h3>
           Life is short, <br />
@@ -343,12 +343,12 @@
       <div class="reservation-right">
         <img src="assets/photo/reservation.jpg" alt="image" />
       </div>
-      <div class="reservation-hidden" id="successReservation">
+      <div class="hidden" id="successReservation">
         <i class="fa-solid fa-square-check"></i>
         <p>Reservation success</p>
       </div>
     </section>
-    <section class="hotel" id="hotel">
+    <section class="hotel scroll-hidden" id="hotel">
       <h3>Our hotel</h3>
       <p>You can see their one of our hotel destination</p>
       <div class="hotel-content">
@@ -403,12 +403,13 @@
         </div>
         <div class="footer-right">
           <h4>Sign up to new paper</h4>
-          <div class="footer-form-content">
-            <input type="email" name="newpaper" id="newpaper" />
-            <button>Send</button>
+          <div class="footer-form-content" action=" ">
+            <input type="email" name="newpaper" id="newpaper" required />
+            <button type="submit" id="send">Send</button>
           </div>
         </div>
       </div>
+      <p class="hidden" id="sent">Sent!</p>
       <p class="copyright">Design by JeanMarc RAJAONARIVELONA</p>
     </footer>
   </body>

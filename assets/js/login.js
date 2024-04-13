@@ -36,7 +36,7 @@ login.addEventListener("click", (event) => {
   loading();
   setTimeout(() => {
     if (user === mail && password === pass) {
-      window.location.href = "../../index.html";
+      window.location.href = "index.html";
     } else {
       stoploading();
       showError();
